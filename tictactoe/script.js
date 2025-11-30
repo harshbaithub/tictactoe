@@ -12,7 +12,7 @@ const winConditions = [
   [0,4,8], [2,4,6]
 ];
 
-// Create 9 cells
+
 gameState.forEach((_, index) => {
   const cell = document.createElement("div");
   cell.classList.add("cell");
@@ -58,3 +58,4 @@ function restartGame() {
 
 document.querySelectorAll(".cell").forEach(cell => cell.addEventListener("click", handleClick));
 restartBtn.addEventListener("click", restartGame);
+
